@@ -367,16 +367,16 @@
 					R.fields["m_stat"] = health_status
 			return //Medical HUD ends here.
 
-		if(href_list["hud"] == "mental")
-			if(!HAS_TRAIT(H, TRAIT_MEDICAL_HUD_MENTAL))
-				return
-			if(href_list["quirk"])
-				var/quirkstring = get_quirk_string(TRUE, CAT_QUIRK_ALL)
-				if(quirkstring)
-					to_chat(usr,  "<span class='notice ml-1'>Detected physiological traits:</span>\n<span class='notice ml-2'>[quirkstring]</span>")
-				else
-					to_chat(usr,  "<span class='notice ml-1'>No physiological traits found.</span>")
-			return
+if(href_list["hud"] == "mental")
+	if(!HAS_TRAIT(H, TRAIT_MEDICAL_HUD_MENTAL))
+		return
+	if(href_list["quirk"])
+		var/quirkstring = get_quirk_string(TRUE, CAT_QUIRK_ALL)
+		if(quirkstring)
+			to_chat(usr,  "<span class='notice ml-1'>Detected physiological traits:</span>\n<span class='notice ml-2'>[quirkstring]</span>")
+		else
+			to_chat(usr,  "<span class='notice ml-1'>No physiological traits found.</span>")
+	return
 
 		if(href_list["hud"] == "s")
 			if(!HAS_TRAIT(H, TRAIT_SECURITY_HUD))
