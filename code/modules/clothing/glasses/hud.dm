@@ -68,6 +68,15 @@
 	tint = 1
 	glass_colour_type = /datum/client_colour/glass_colour/blue
 
+/obj/item/clothing/glasses/hud/health/mental
+	name = "medical mental scanner"
+	desc = "A snazzy pair of circle-framed glasses. Looking at them reminds you of your parents."
+	icon_state = "circle_glasses"
+	hud_type = null
+	hud_trait = TRAIT_MEDICAL_HUD_MENTAL
+	glass_colour_type = /datum/client_colour/glass_colour/lightblue
+
+
 /obj/item/clothing/glasses/hud/diagnostic
 	name = "diagnostic HUD"
 	desc = "A heads-up display capable of analyzing the integrity and status of robotics and exosuits."
