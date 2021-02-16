@@ -72,7 +72,7 @@
 	name = "medical mental scanner"
 	desc = "A snazzy pair of circle-framed glasses. Looking at them reminds you of your parents."
 	icon_state = "circle_glasses"
-	hud_type = null
+	hud_type = DATA_HUD_MEDICAL_MENTAL
 	hud_trait = TRAIT_MEDICAL_HUD_MENTAL
 	glass_colour_type = /datum/client_colour/glass_colour/lightblue
 
