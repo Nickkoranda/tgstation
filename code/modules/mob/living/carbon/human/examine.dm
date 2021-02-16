@@ -401,7 +401,8 @@
 				. += "<a href='?src=[REF(src)];hud=m;m_stat=1'>\[[health_r]\]</a>"
 			record = find_record("name", perp_name, GLOB.data_core.medical)
 			if(record)
-				. += "<a href='?src=[REF(src)];hud=m;evaluation=1'>\[Medical evaluation\]</a><br>"
+				. += "<a href='?src=[REF(src)];hud=m;evaluation=1'>\[Medical evaluation\]</a>"
+				
 		if(HAS_TRAIT(user, TRAIT_MEDICAL_HUD_MENTAL))
 			if(record)
 				. += "<a href='?src=[REF(src)];hud=mental;quirk=1'>\[See quirks\]</a>"
